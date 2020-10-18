@@ -45,7 +45,7 @@ function DataPage(props){
 
                 <div style={style}>
                     <div>
-                        <img src={Funko.props.img}/>
+                        <img src={Funko.props.img} alt={props.img}/>
                         <h1>{"Name: " + Funko.props.name}</h1>
                         <h2>{"Category: " + Funko.props.category}</h2>
                         <h2>{"Value: " + Funko.props.value}</h2>
@@ -58,7 +58,7 @@ function DataPage(props){
             {dateEles.filter(funko => funko.props.name === props.match.params.id).map(Funko => (
                 <div>
                     <div style={style}>
-                        <img src={Funko.props.img}/>
+                        <img src={Funko.props.img} alt={props.img}/>
                         <h1>{"Name: " + Funko.props.name}</h1>
                         <h2>{"Category: " + Funko.props.category}</h2>
                         <h2>{"Value: " + Funko.props.value}</h2>

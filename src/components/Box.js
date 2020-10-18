@@ -41,7 +41,7 @@ function Box(props){
         <Link to={"/dataPage/"+name}>
         <div style={style}>
 
-            <img src={img}/>
+            <img src={img} alt={img}/>
             <h1>Name: {name}</h1>
             <h2>Category: {category}</h2>
             <h3>Value: {value}</h3>
